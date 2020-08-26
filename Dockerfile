@@ -33,4 +33,6 @@ RUN npm install
 # run app
 COPY server ./
 COPY --from=client /app/build ./public
+
+EXPOSE 5000
 CMD ["node", "index.js"]
